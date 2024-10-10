@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Ally</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Banner -->
+    <header class="hero-banner text-center">
+        <h1>Let’s Elevate Your Brand</h1>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="text-center">
+        <h2>About Us</h2>
+        <p>At Digital Ally, we provide more than you expect. Our mission is to craft long-term solutions that empower your brand to thrive in the digital landscape.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="text-center bg-light">
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Branding</h3>
+                <p>Crafting unique identities that resonate with your audience.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Website Design</h3>
+                <p>Designing stunning and functional websites tailored to your needs.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Performance Marketing</h3>
+                <p>Driving results through data-driven strategies and creative campaigns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="text-center">
+        <h2>Case Studies</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Project Alpha</h3>
+                <p><strong>Challenge:</strong> Low brand visibility.</p>
+                <p><strong>Solution:</strong> Comprehensive branding overhaul.</p>
+                <p><strong>Results:</strong> 150% increase in brand awareness.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Project Beta</h3>
+                <p><strong>Challenge:</strong> Inefficient website.</p>
+                <p><strong>Solution:</strong> Complete website redesign.</p>
+                <p><strong>Results:</strong> 200% increase in user engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="text-center bg-light">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>"Digital Ally transformed our online presence!" - Client A</p>
+        </blockquote>
+        <blockquote>
+            <p>"Their innovative strategies truly made a difference." - Client B</p>
+        </blockquote>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="text-center">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center bg-dark text-white">
+        <p>&copy; 2024 Digital Ally. All Rights Reserved.</p>
+        <div>
+            <a href="#" class="text-white">Facebook</a> |
+            <a href="#" class="text-white">Twitter</a> |
+            <a href="#" class="text-white">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Smooth scrolling
+        $('a').on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800);
+            }
+        });
+
+        // Contact form submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your message has been sent!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
